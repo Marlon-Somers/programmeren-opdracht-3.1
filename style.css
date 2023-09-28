@@ -12,16 +12,18 @@ body {
     background-image: url(background.jpeg);
     background-position: center;
     background-repeat: no-repeat;
-    text-align: center;
+    background-size: cover;
+    height: 900px;
+    width: 1200px;
     font-weight: bold;
-    
+    min-height: 100vh;
+    max-width: 100vh;
 
-  
 }
 
 nav {
   display: flex;
-  width: 100%;
+  width: 1519px;
   height: 100px;
   flex-shrink: 0;
   padding: 2rem;
@@ -31,7 +33,7 @@ nav {
   margin: auto;
   background: #00a8c7;
   justify-content: space-between;
-  position: sticky;
+  position: fixed ;
 }
 nav ul {
   display: flex;
@@ -55,16 +57,28 @@ footer{
   width: 100%;
   padding: 2rem;
   min-height: 10vh;
-  align-items: center;
-  flex-wrap: wrap;
   margin: auto;
   background: #00a8c7;
-  justify-content: space-between;
   position: fixed;
-  bottom: 0;
+  bottom:0;
+
 }
   
 .container{
+    text-align: center;
     color: white;
-    font-family: "goldman"
+    font-family: "goldman";
+    font-size: 40px;
+    font-weight: 700;
+    justify-content: center;
+    position: relative;
+    top: 30%;
+    left: 60%;
+  
+   
+}
+
+img{
+float:left;
+margin: 0. 10px. 10px. 0;
 }
