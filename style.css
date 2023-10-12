@@ -18,9 +18,11 @@ body {
     font-weight: bold;
     min-height: 100vh;
     max-width: 100vh;
-
 }
 
+h1{
+  font-size: 3rem;
+}
 nav {
   display: flex;
   width: 1519px;
@@ -32,17 +34,14 @@ nav {
   flex-wrap: wrap;
   margin: auto;
   background: #00a8c7;
-  justify-content: space-between;
   position: fixed ;
+  float: left;
 }
-nav ul {
-  display: flex;
-  align-items: center;
-  list-style-type: none;
-}
+
 nav li {
   font-size: 2.5rem;
   padding: 0 4rem 0 4rem;
+  list-style: none;
 }
 nav a {
   color: white;
@@ -65,13 +64,10 @@ footer{
 }
   
 .container{
-    text-align: center;
     color: white;
     font-family: "goldman";
     font-size: 40px;
     font-weight: 700;
-    justify-content: center;
-    position: relative;
     top: 30%;
     left: 60%;
   
@@ -81,4 +77,60 @@ footer{
 img{
 float:left;
 margin: 0. 10px 10px 0;
+}
+
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-btn {
+  background-color: #00a8c7;
+  ;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #00a8c7;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content li {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-content li:hover {
+  background-color: #00a8c7;
+  color: #fff;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .dropdown-content {
+      position: static;
+  }
+  .dropdown:hover .dropdown-content {
+      display: none;}
+
+  .nav-item{
+    align-items: center;
+  }
 }
